@@ -1,0 +1,20 @@
+{
+  "name": "auth-3p",
+  "version": "0.0.1",
+  "description": "third part auth module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "kazaff",
+    "email": "edisondik@163.com",
+    "url": "http://blog.kazaff.me"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "hiredis": "^0.4.1",
+    "redis": "^2.3.1",
+    "restify": "^4.0.3"
+  }
+}
