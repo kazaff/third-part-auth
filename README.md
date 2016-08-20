@@ -176,3 +176,8 @@
 [微信第三方登录](http://blog.kazaff.me/2015/11/24/%E5%BE%AE%E4%BF%A1%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95/)
 
 [QQ第三方登录](http://blog.kazaff.me/2015/11/25/qq%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95/)
+
+
+###Issues
+---
+如有问题，可提交issue，谢谢合作~
