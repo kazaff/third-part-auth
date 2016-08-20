@@ -32,6 +32,8 @@
 
 #####网站账号和微信账号的绑定
 
+![](http://pic.yupoo.com/kazaff/FMVYRaUJ/2ZH4T.png)
+
 1. 根据微信开放平台提供的[接口](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419316505&token=&lang=zh_CN)，网站前台显示二维码供用户扫描，并填写**redirect_uri**参数为`本中间件`提供的服务地址，**state**参数要包含当前登录用户的**会话id**，包含需要`本中间件`回调的url地址，以"|"分割，例如：
 
 	https://open.weixin.qq.com/connect/qrconnect?xxxxxxxxxx&state=123|http%3a%2f%2fblog.kazaff.me
@@ -48,6 +50,8 @@
 	- type：当status为1时，表示绑定的类型，例如：weixin
 
 #####网站微信账号登录
+
+![](http://pic.yupoo.com/kazaff/FMVYRkiQ/Gpqe.png)
 
 0. 网站前台显示二维码供用户扫描，并填写**redirect_uri**参数为`本中间件`提供的服务地址，**state**参数要包含需要`本中间件`回调的url地址；
 
@@ -110,7 +114,14 @@
 
 	- 响应类型：
 
-	```	{		status:true,	//状态		msg:"",	//错误提醒		data:{			id: 7	//用户id		}	}
+	```
+	{
+		status:true,	//状态
+		msg:"",	//错误提醒
+		data:{
+			id: 7	//用户id
+		}
+	}
 
 	```
 
@@ -121,12 +132,20 @@
 	- 携带参数：
 
 	```
-	id： 用户id	key： 用于通信双方识别的密钥，类似微信接口所需的appsecret
+	id： 用户id
+	key： 用于通信双方识别的密钥，类似微信接口所需的appsecret
 	```
 
 	- 响应类型：
 
-	```	{		status:true,	//状态		msg:"",	//错误提醒		data:{			session:"a!@#QERQWEdfadf!@%(%&^*)"	//会话id		}	}
+	```
+	{
+		status:true,	//状态
+		msg:"",	//错误提醒
+		data:{
+			session:"a!@#QERQWEdfadf!@%(%&^*)"	//会话id
+		}
+	}
 
 	```
 
